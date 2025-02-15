@@ -20,6 +20,9 @@
   time.timeZone = "Europe/Bucharest";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  # Remove predefined system aliases.
+  environment.shellAliases = lib.mkForce { };
+
 
 
   # ! ------------- CAUTION ------------- ! #
