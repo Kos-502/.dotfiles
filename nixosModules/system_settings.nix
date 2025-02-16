@@ -23,8 +23,6 @@
   # Remove predefined system aliases.
   environment.shellAliases = lib.mkForce { };
 
-
-
   # ! ------------- CAUTION ------------- ! #
 
   # Set the system state version.
