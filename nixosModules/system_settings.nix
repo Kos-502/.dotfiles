@@ -23,6 +23,10 @@
   # Remove predefined system aliases.
   environment.shellAliases = lib.mkForce { };
 
+  # Enable sound.
+  sound.enable = true;
+  security.rtkit.enable = true;
+
   # ! ------------- CAUTION ------------- ! #
 
   # Set the system state version.

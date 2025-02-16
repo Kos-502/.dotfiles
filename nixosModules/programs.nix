@@ -2,7 +2,6 @@
 
 {
   programs = {
-
     # Enable the neovim text editor.
     neovim = {
       enable = true;

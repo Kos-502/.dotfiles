@@ -2,7 +2,6 @@
 
 {
   users.users = {
-
     # Define the main user.
     kos = {
       isNormalUser = true;

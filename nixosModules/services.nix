@@ -2,7 +2,6 @@
 
 {
   services = {
-
     # Enable the greetd service (TUIgreet).
     greetd = {
       enable = true;
@@ -17,6 +16,15 @@
           user = "greeter";
         };
       };
+    };
+
+    # Enable pipewire.
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
     };
   };
 }
