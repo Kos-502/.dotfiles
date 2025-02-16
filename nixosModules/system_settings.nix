@@ -23,8 +23,7 @@
   # Remove predefined system aliases.
   environment.shellAliases = lib.mkForce { };
 
-  # Enable sound.
-  sound.enable = true;
+  # Enable RealtimeKit.
   security.rtkit.enable = true;
 
   # ! ------------- CAUTION ------------- ! #
