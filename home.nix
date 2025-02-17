@@ -31,7 +31,7 @@
       wl-clipboard
 
       luajitPackages.lua-lsp
-      nil
+      nil_ls
     ];
 
     plugins = with pkgs.vimPlugins; [
