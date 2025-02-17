@@ -13,6 +13,7 @@
 
     # Development:
     kitty
-    gcc
+    gcc    
+    glow
   ];
 }
