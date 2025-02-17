@@ -13,5 +13,6 @@
 
     # Development:
     kitty
+    gcc
   ];
 }
