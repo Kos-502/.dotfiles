@@ -25,27 +25,26 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-require("mason").setup()
-require("mason-lspconfig").setup_handlers({
+require('neodev').setup()
+require('lspconfig').lua_ls.setup {
+    on_attach = on_attach,
 
-    function(server_name)
-        require("lspconfig")[server_name].setup {
-            on_attach = on_attach,
-            capabilities = capabilities
-        }
+    capabilities = capabilities,
+	root_dir = function()
+        return vim.loop.cwd()
     end,
 
-    ["lua_ls"] = function()
-        require('neodev').setup()
-        require('lspconfig').lua_ls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-                Lua = {
-                    workspace = { checkThirdParty = false },
-                    telemetry = { enable = false },
-                },
-            }
-        }
-    end
-})
+    cmd = { "lua-lsp" },
+
+    settings = {
+        Lua = {
+            workspace = { checkThirdParty = false },
+            telemetry = { enable = false },
+        },
+    },
+}
+
+require('lspconfig').rnix.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
