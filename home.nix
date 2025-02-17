@@ -19,6 +19,7 @@
     EDITOR = "nvim";
   };
 
+  # NEOVIM
   programs.neovim =
   let
     toLua = str: "lua << EOF\n${str}\nEOF\n";
