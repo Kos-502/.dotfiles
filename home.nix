@@ -31,7 +31,6 @@
       wl-clipboard
 
       luajitPackages.lua-lsp
-      rnix-lsp
     ];
 
     plugins = with pkgs.vimPlugins; [
@@ -81,7 +80,7 @@
       vim-nix
       
       # Treesitter
-      (vimPlugins.nvim-treesitter.withPlugins (p: [
+      (nvim-treesitter.withPlugins (p: [
         p.tree-sitter-nix
         p.tree-sitter-vim
         p.tree-sitter-bash
