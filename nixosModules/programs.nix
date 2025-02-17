@@ -2,15 +2,6 @@
 
 {
   programs = {
-    # Enable the neovim text editor.
-    neovim = {
-      enable = true;
-      
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-    };
-
     # Enable the hyprland window manager.
     hyprland.enable = true;
 
