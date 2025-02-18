@@ -10,6 +10,11 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users.kos = import ./home.nix;
+    users."kos" = {
+      modules = [
+        ./home.nix
+        ./homeManagerModules/default.nix
+      ];
+    };
   };
 }

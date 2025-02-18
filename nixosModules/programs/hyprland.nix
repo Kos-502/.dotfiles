@@ -1,8 +1,7 @@
-{ inputs, pkgs, ... }:
+_:
 
 {
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
+  # HYPRLAND - a 100% independent, dynamic tiling Wayland compositor.
+
+  programs.hyprland.enable = true;
 }
