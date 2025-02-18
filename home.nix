@@ -1,4 +1,4 @@
-{ pkgs, inputs }:
+{ pkgs, inputs, ... }:
 
 {
   # Expose home-manager to itself.
@@ -100,11 +100,6 @@
 
   programs.git.enable = true;
   programs.firefox.enable = true;
-
-  wayland.windowManager.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
 
   # !!! ----------- CAUTION ----------- !!! #
 

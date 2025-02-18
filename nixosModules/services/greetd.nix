@@ -1,10 +1,10 @@
-pkgs: 
+{ pkgs, ... }: 
 
 {
   # GREETD - a system login and authentication daemon
   # designed for Wayland display managers.
 
-  greetd = {
+  services.greetd = {
     enable = true;
 
     settings = {

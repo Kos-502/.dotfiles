@@ -1,4 +1,4 @@
-inputs:
+{ inputs, ... }:
 
 {
   imports = [
@@ -7,6 +7,8 @@ inputs:
 
     inputs.home-manager.nixosModules.home-manager
   ];
+
+  programs.hyprland.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
