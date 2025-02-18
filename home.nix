@@ -1,7 +1,7 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, inputs }:
 
 {
-  # Enable home manager.
+  # Expose home-manager to itself.
   programs.home-manager.enable = true;
 
   # Declare information about the user.
@@ -9,7 +9,7 @@
   home.homeDirectory = "/home/kos";
   
   # Declare installed packages.
-  home.packages = with pkgs; [ ];
+  # home.packages = with pkgs; [ ];
 
   # Link files to home directory.
   home.file = { };
@@ -19,7 +19,7 @@
     EDITOR = "nvim";
   };
 
-  # NEOVIM
+  # Configure Neovim
   programs.neovim =
   let
     toLua = str: "lua << EOF\n${str}\nEOF\n";
@@ -30,13 +30,12 @@
 
     extraPackages = with pkgs; [
       wl-clipboard
-
       luajitPackages.lua-lsp
       nil
     ];
 
     plugins = with pkgs.vimPlugins; [
-      # Line commenter plugin
+      # Line commenter
       {
         plugin = comment-nvim;
         config = toLua "require(\"Comment\").setup()";
@@ -48,6 +47,12 @@
         config = toLuaFile ./nvim/plugin/lsp.lua;
       }
       
+      # Neovim setup for init.lua
+      neodev-nvim
+
+      # Support for writing nix expressions in neovim
+      vim-nix
+
       # Gruvbox colorscheme
       {
         plugin = gruvbox-nvim;
@@ -57,8 +62,6 @@
       # Lualine (better vim line)
       lualine-nvim
       nvim-web-devicons
-
-      neodev-nvim
 
       # Code completion
       {
@@ -78,8 +81,6 @@
         plugin = telescope-nvim;
         config = toLuaFile ./nvim/plugin/telescope.lua;
       }
-
-      vim-nix
       
       # Treesitter
       (nvim-treesitter.withPlugins (p: [
@@ -97,12 +98,21 @@
     '';
   };
 
-  # ! ------------- CAUTION ------------- ! #
+  programs.git.enable = true;
+  programs.firefox.enable = true;
 
+  wayland.windowManager.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  };
+
+  # !!! ----------- CAUTION ----------- !!! #
+
+  # Set the home manager state version.
   # (Do NOT change under any circumstances!)
   # (Not even if you update home manager.)
 
   home.stateVersion = "24.11";
 
-  # ! ------------- CAUTION ------------- ! #
+  # !!! ----------- CAUTION ----------- !!! #
 }
