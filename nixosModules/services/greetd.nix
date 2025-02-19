@@ -1,4 +1,4 @@
-pkgs: 
+{ pkgs, ... }: 
 
 {
   # GREETD - a system login and authentication daemon
