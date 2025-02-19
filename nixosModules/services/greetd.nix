@@ -9,10 +9,13 @@
 
     settings = {
       default_session = let
+        tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+        timeFormat = "[%B %Y, %A %d ##### %I:%M %p]";
+        greeting = "Welcome! If you are not the owner of this laptop, please leave it alone. =]";
         session = "Hyprland";
       in
       {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd ${session}";
+        command = "${tuigreet} --time --time-format '${timeFormat}' --greeting '${greeting}' --cmd ${session}";
         user = "greeter";
       };
     };
