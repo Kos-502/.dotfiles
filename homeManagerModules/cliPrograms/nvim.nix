@@ -38,7 +38,7 @@
       # Gruvbox colorscheme
       {
         plugin = gruvbox-nvim;
-        config = "colorscheme gruvbox";
+        config = toLuaFile ./nvim/plugin/gruvbox.lua;
       }
 
       # Lualine (better vim line)
