@@ -1,9 +1,12 @@
 { ... }:
 
 {
+  # ZSH - an extended version of the Bourne Shell (sh).
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
+    autosuggestions.enable = true;
 
     sessionVariables = {
       EDITOR = "nvim";
