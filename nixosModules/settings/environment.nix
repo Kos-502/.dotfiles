@@ -15,8 +15,6 @@
 
       kitty
       gcc
-
-      glow
     ];
   };
 }
