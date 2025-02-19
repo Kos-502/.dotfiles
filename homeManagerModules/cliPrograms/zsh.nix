@@ -16,7 +16,5 @@
       ll = "ls -l --group-directories-first --color=auto";
       la = "ls -lA --group-directories-first --color=auto";
     };
-
-    histSize = 10000;
   };
 }
