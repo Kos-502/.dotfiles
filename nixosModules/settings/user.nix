@@ -1,4 +1,4 @@
-_:
+{ pkgs, ... }:
 
 {
   # Define the main system user.
@@ -6,6 +6,7 @@ _:
     isNormalUser = true;
     description = "Kos";
     home = "/home/kos";
+    shell = pkgs.zsh;
 
     extraGroups = [
       "wheel"          # Allows access to sudo commands.
