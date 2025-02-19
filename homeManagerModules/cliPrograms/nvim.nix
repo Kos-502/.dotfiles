@@ -26,7 +26,7 @@
       # LSP
       {
         plugin = nvim-lspconfig;
-        config = toLuaFile ../../nvim/plugin/lsp.lua;
+        config = toLuaFile ./nvim/plugin/lsp.lua;
       }
       
       # Neovim setup for init.lua
@@ -48,7 +48,7 @@
       # Code completion
       {
         plugin = nvim-cmp;
-        config = toLuaFile ../../nvim/plugin/cmp.lua;
+        config = toLuaFile ./nvim/plugin/cmp.lua;
       }
 
       cmp_luasnip
@@ -61,7 +61,7 @@
       # Telescope
       {
         plugin = telescope-nvim;
-        config = toLuaFile ../../nvim/plugin/telescope.lua;
+        config = toLuaFile ./nvim/plugin/telescope.lua;
       }
       
       # Treesitter
@@ -77,7 +77,7 @@
 
     # Include the options neovim uses.
     extraLuaConfig = ''
-      ${builtins.readFile ../../nvim/options.lua}
+      ${builtins.readFile ./nvim/options.lua}
     '';
   };
 }
