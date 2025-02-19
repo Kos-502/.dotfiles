@@ -2,8 +2,8 @@ _:
 
 {
   imports = [
-    ./cliPrograms/default.nix
-    ./guiPrograms/default.nix
-    ./settings/default.nix
+    ./cliPrograms
+    ./guiPrograms
+    ./settings/home.nix
   ];
 }
