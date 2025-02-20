@@ -4,7 +4,7 @@ _:
   # Bundle all the GUI programs.
 
   imports = [
-    ./alacritty/alacritty.nix
+    ./alacritty
     ./firefox.nix
   ];
 }
