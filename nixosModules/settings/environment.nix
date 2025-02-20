@@ -7,13 +7,15 @@
 
     # Declare installed system-wide packages.
     systemPackages = with pkgs; [
+      # NixOS related:
       home-manager
 
+      # Hyprland related:
       waybar
       rofi-wayland
       swww
 
-      kitty
+      # Necessary for building:
       gcc
     ];
   };
