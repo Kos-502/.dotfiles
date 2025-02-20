@@ -15,7 +15,9 @@ pkgs:
     };
 
     # Declare user-wide installed packages.
-    # packages = with pkgs; [ ]
+    packages = with pkgs; [
+      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    ];
 
     # !!! ----------- CAUTION ----------- !!! #
 
