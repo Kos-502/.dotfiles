@@ -7,10 +7,6 @@
     enable = true;
     enableCompletion = true;
 
-    sessionVariables = {
-      EDITOR = "nvim";
-    };
-
     shellAliases = {
       nixos-rbs = "nixos-rebuild switch --flake /home/kos/.dotfiles --use-remote-sudo";
 
