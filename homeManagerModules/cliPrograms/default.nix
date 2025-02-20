@@ -2,10 +2,10 @@ _:
 
 {
   imports = [
+    ./alacritty.nix
     ./zsh.nix
     ./git.nix
     ./nvim.nix
-    ./kitty.nix
     ./lf.nix
   ];
 }
