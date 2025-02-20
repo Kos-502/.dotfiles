@@ -48,7 +48,6 @@ require('lspconfig').nil_ls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 
-    -- Turn this on to get rid of an error message.
     settings = {
       nix = {
         flake = {
