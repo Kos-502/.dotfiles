@@ -26,7 +26,7 @@
       # LSP
       {
         plugin = nvim-lspconfig;
-        config = toLuaFile ./nvim/plugin/lsp.lua;
+        config = toLuaFile ./nvimConfig/plugin/lsp.lua;
       }
       
       # Neovim setup for init.lua
@@ -38,7 +38,7 @@
       # Gruvbox colorscheme
       {
         plugin = gruvbox-nvim;
-        config = toLuaFile ./nvim/plugin/gruvbox.lua;
+        config = toLuaFile ./nvimConfig/plugin/gruvbox.lua;
       }
 
       # Lualine (better vim line)
@@ -48,7 +48,7 @@
       # Code completion
       {
         plugin = nvim-cmp;
-        config = toLuaFile ./nvim/plugin/cmp.lua;
+        config = toLuaFile ./nvimConfig/plugin/cmp.lua;
       }
 
       cmp_luasnip
@@ -77,7 +77,7 @@
 
     # Include the options neovim uses.
     extraLuaConfig = ''
-      ${builtins.readFile ./nvim/options.lua}
+      ${builtins.readFile ./nvimConfig/options.lua}
     '';
   };
 }
