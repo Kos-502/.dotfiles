@@ -61,7 +61,7 @@
       # Telescope
       {
         plugin = telescope-nvim;
-        config = toLuaFile ./nvim/plugin/telescope.lua;
+        config = toLuaFile ./nvimConfig/plugin/telescope.lua;
       }
       
       # Treesitter
