@@ -16,6 +16,12 @@
 
     # Declare user-wide installed fonts.
     packages = with pkgs; [
+      # Hyprland related:
+      waybar
+      rofi-wayland
+      swww
+
+      # Custom fonts:
       nerd-fonts.jetbrains-mono
     ];
 
