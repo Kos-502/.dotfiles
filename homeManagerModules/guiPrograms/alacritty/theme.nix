@@ -3,7 +3,7 @@
 {
   # Set the Alacritty theme colors.
 
-  programs.alacritty.colors = {
+  programs.alacritty.settings.colors = {
     primary = {
       background = "#282828";
       foreground = "#ebdbb2";

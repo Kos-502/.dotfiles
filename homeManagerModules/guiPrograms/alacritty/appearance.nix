@@ -6,7 +6,7 @@
   # Enable font configuration.
   fonts.fontconfig.enable = true;
 
-  programs.alacritty = {
+  programs.alacritty.settings = {
     window = {
       decorations = "None";
       dynamic_padding = true;
