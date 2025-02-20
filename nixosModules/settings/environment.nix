@@ -10,11 +10,6 @@
       # NixOS related:
       home-manager
 
-      # Hyprland related:
-      waybar
-      rofi-wayland
-      swww
-
       # Necessary for building:
       gcc
     ];
