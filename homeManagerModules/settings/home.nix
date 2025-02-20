@@ -19,6 +19,8 @@
       nerd-fonts.jetbrains-mono
     ];
 
+
+
     # !!! ----------- CAUTION ----------- !!! #
 
     # Set the home manager state version.

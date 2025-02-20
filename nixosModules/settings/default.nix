@@ -1,6 +1,8 @@
 _:
 
 {
+  # Bundle all the defined settings.
+
   imports = [
     ./bootloader.nix
     ./networking.nix

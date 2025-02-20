@@ -10,8 +10,8 @@
     settings = {
       default_session = let
         tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-        timeFormat = "[%B %Y, %A %d ##### %I:%M %p]";
-        greeting = "Welcome! If you are not the owner of this laptop, please leave it alone. =]";
+        timeFormat = "[ %B %Y, %A %d --- %I:%M %p ]";
+        greeting = "Welcome, user!";
         session = "Hyprland";
       in
       {
