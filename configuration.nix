@@ -9,6 +9,6 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users."kos" = import ./homeManagerModules/default.nix;
+    users."kos" = import ./homeManagerModules;
   };
 }
