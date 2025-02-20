@@ -10,6 +10,7 @@
     ./autostart.nix
     ./monitor.nix
     ./appearance.nix
+    ./input.nix
     ./keybinds.nix
   ];
 }
