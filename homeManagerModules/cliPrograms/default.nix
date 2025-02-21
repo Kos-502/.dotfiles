@@ -8,5 +8,6 @@ _:
     ./zsh.nix
     ./git.nix
     ./lf.nix
+    ./starship.nix
   ];
 }
