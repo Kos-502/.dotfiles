@@ -6,12 +6,13 @@
   wayland.windowManager.hyprland.enable = true;
 
   # Import the custom hyprland nix modules.
-  import = [
+  imports = [
     ./autostart.nix
     ./monitor.nix
     ./appearance.nix
     ./input.nix
     ./keybinds.nix
     ./miscellaneous.nix
+    ./animations.nix
   ];
 }
