@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # ZSH - an extended version of the Bourne Shell (sh).
@@ -21,5 +21,7 @@
       "..." = "cd ../..";
       "...." = "cd ../../..";
     };
+
+    initExtra = ''eval "$(${pkgs.starship}/bin/starship init zsh)"'';
   };
 }
