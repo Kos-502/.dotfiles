@@ -31,6 +31,8 @@
     inputs.home-manager.nixosModules.home-manager
   ];
 
+  networking.hostName = "MUUN";
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users."kos" = import ../../homeManagerModules;
