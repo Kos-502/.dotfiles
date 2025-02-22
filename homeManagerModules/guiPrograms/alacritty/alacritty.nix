@@ -11,11 +11,11 @@
 
   config = lib.mkIf config.alacritty.enable {
     programs.alacritty.enable = true;
-
-    imports = [
-      ./appearance.nix
-      ./theme.nix
-      ./miscellaneous.nix
-    ];
   };
+
+  imports = [
+    ./appearance.nix
+    ./theme.nix
+    ./miscellaneous.nix
+  ];
 }

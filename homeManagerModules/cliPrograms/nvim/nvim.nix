@@ -10,12 +10,12 @@
 
   config = lib.mkIf config.nvim.enable {
     programs.neovim.enable = true;
-
-    imports = [
-      ./settings.nix
-      ./extraPackages.nix
-      ./plugins.nix
-      ./miscellaneous.nix
-    ];
   };
+
+  imports = [
+    ./settings.nix
+    ./extraPackages.nix
+    ./plugins.nix
+    ./miscellaneous.nix
+  ];
 }
