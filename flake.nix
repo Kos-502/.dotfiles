@@ -17,7 +17,7 @@
     nixosConfigurations."MUUN" = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
 
-      modules = [ ./configuration.nix ];
+      modules = [ ./hosts/MUUN/configuration.nix ];
     };
   };
 }
