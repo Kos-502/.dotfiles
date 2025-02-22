@@ -3,18 +3,14 @@
 #   / _` / -_)  _/ _` | || | |  _|_| ' \| \ \ /
 #   \__,_\___|_| \__,_|\_,_|_|\__(_)_||_|_/_\_\
 
-# System settings module bundle
+# Home-manager settings module bundle
 
 { ... }:
 
 {
   imports = [
-    ./bootloader.nix
-    ./system.nix
-    ./networking.nix
-    ./localization.nix
-    ./nix.nix
-    ./environment.nix
-    ./user.nix
+    ./home.nix
+    ./variables.nix
+    ./packages.nix
   ];
 }

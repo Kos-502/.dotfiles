@@ -1,9 +1,16 @@
+#                     _      _        _     
+#    __ _ _ _ ___ ___| |_ __| |  _ _ (_)_ __
+#   / _` | '_/ -_) -_)  _/ _` |_| ' \| \ \ /
+#   \__, |_| \___\___|\__\__,_(_)_||_|_/_\_\
+#   |___/                                   
+
+# GREETD - a system login and authentication
+#          daemon designed for Wayland
+#          display managers
+
 { pkgs, ... }: 
 
 {
-  # GREETD - a system login and authentication daemon
-  # designed for Wayland display managers.
-
   services.greetd = {
     enable = true;
 

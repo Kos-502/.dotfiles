@@ -1,4 +1,9 @@
-{ pkgs, ... }:
+#    _                         _     
+#   | |_  ___ _ __  ___   _ _ (_)_ __
+#   | ' \/ _ \ '  \/ -_)_| ' \| \ \ /
+#   |_||_\___/_|_|_\___(_)_||_|_/_\_\
+
+{ ... }:
 
 {
   programs.home-manager.enable = true;
@@ -7,26 +12,9 @@
     username = "kos";
     homeDirectory = "/home/kos";
 
-    sessionVariables = {
-      EDITOR = "nvim";
-    };
-
-    packages = with pkgs; [
-      ### HYPRLAND RELATED
-
-      waybar
-      rofi-wayland
-      swww
-
-      ### CUSTOM FONTS
-
-      nerd-fonts.jetbrains-mono
-    ];
-
     # !!! ----------- CAUTION ----------- !!! #
 
-    # Set the home manager state version.
-    # (Do NOT change under any circumstances!)
+    # Do NOT change under any circumstances!
     # (Not even if you update home manager.)
 
     stateVersion = "24.11";

@@ -1,16 +1,26 @@
-_:
+#       _      __           _ _          _     
+#    __| |___ / _|__ _ _  _| | |_   _ _ (_)_ __
+#   / _` / -_)  _/ _` | || | |  _|_| ' \| \ \ /
+#   \__,_\___|_| \__,_|\_,_|_|\__(_)_||_|_/_\_\
+
+# CLI programs module bundles
+
+{ ... }:
 
 {
   imports = [
-    ./zsh.nix
-    ./starship.nix
+    ./zsh
+    ./nvim
     ./git.nix
     ./lf.nix
-    ./nvim/nvim.nix
   ];
 
+  ### DEFAULT ENABLE STATE
+
+  # (These can be turned off, if needed, in
+  # other hosts' configurations.) 
+
   zsh.enable = true;
-  starship.enable = true;
   git.enable = true;
   lf.enable = true;
   nvim.enable = true;

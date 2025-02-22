@@ -1,9 +1,15 @@
+#         _ _          _     
+#    __ _(_) |_   _ _ (_)_ __
+#   / _` | |  _|_| ' \| \ \ /
+#   \__, |_|\__(_)_||_|_/_\_\
+#   |___/                    
+
+# GIT - a distributed version control system
+#       that tracks versions of files
+
 { config, lib, ... }:
 
 {
-  # GIT - a distributed version control system that tracks versions of files.
-  # (Can be used in conjunction with the popular website GitHub.)
-
   options = {
     git.enable =
       lib.mkEnableOption "enables git";

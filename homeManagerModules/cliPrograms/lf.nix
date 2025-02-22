@@ -1,9 +1,14 @@
+#    _  __       _     
+#   | |/ _| _ _ (_)_ __
+#   | |  _|| ' \| \ \ /
+#   |_|_|(_)_||_|_/_\_\
+
+# LF - a terminal file manager written
+#      in Go with a heavy inspiration from ranger
+
 { config, lib, ... }:
 
 {
-  # LF - a terminal file manager written in Go
-  # with a heavy inspiration from ranger.
-
   options = {
     lf.enable =
       lib.mkEnableOption "enables lf";
