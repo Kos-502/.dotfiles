@@ -25,7 +25,7 @@
     ./appearance.nix
     ./input.nix
     ./keybinds.nix
-    ./miscellaneous.nix
+    ./misc.nix
     ./animations.nix
   ];
 }
