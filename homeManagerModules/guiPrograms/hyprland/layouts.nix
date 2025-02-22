@@ -1,8 +1,6 @@
 { ... }:
 
 {
-  # Define the layouts Hyprland can use.
-
   wayland.windowManager.hyprland.settings = {
     dwindle = {
       pseudotile = true;

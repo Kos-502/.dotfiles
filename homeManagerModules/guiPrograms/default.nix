@@ -1,11 +1,9 @@
-_:
+{ ... }:
 
 {
-  # Bundle all the GUI programs.
-
   imports = [
+    ./alacritty/alacritty.nix
+    ./firefox/firefox.nix
     ./hyprland
-    ./alacritty
-    ./firefox.nix
   ];
 }

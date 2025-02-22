@@ -1,23 +1,30 @@
-{ lib, ... }:
+{ config, lib, ... }:
 
 {
-  programs.starship = {
-    enable = true;
+  options = {
+    starship.enable =
+      lib.mkEnableOption "enables starship";
+  };
 
-    settings = {
-      add_newline = true;
+  config = lib.mkIf config.starship.enable {
+    programs.starship = {
+      enable = true;
 
-      format = lib.strings.concatStrings [
-        "$directory"
-        "$git_branch"
-        "$git_status"
+      settings = {
+        add_newline = true;
 
-        "$python"
-        "$jobs"
-        "$cmd_duration"
+        format = lib.strings.concatStrings [
+          "$directory"
+          "$git_branch"
+          "$git_status"
 
-        "$character"
-      ];
+          "$python"
+          "$jobs"
+          "$cmd_duration"
+
+          "$character"
+        ];
+      };
     };
   };
 }

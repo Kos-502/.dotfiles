@@ -1,9 +1,6 @@
 { ... }:
 
 {
-  # Set the Alacritty appearance settings.
-
-  # Enable font configuration.
   fonts.fontconfig.enable = true;
 
   programs.alacritty.settings = {

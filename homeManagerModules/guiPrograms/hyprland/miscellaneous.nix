@@ -1,8 +1,6 @@
 { ... }:
 
 {
-  # Set some miscellaneous Hyprland options.
-
   wayland.windowManager.hyprland.settings = {
     env = [
       "XCURSOR_SIZE, 24"

@@ -1,8 +1,6 @@
 { ... }:
 
 {
-  # Define every used keybind.
-
   wayland.windowManager.hyprland.settings = let
     mod = "SUPER";
 
@@ -10,7 +8,6 @@
     menu = "rofi -show drun -show-icons";
   in
   {
-    # Keyboard specific:
     bind = [
       ### HYPRLAND
 
@@ -55,7 +52,6 @@
       "${mod} SHIFT, 5, movetoworkspace, 5"
     ];
 
-    # Mouse specific:
     bindm = [
       ### WINDOW
 
