@@ -2,15 +2,15 @@
 
 {
   environment = {
-    # Reset any system aliases.
     shellAliases = lib.mkForce { };
 
-    # Declare installed system-wide packages.
     systemPackages = with pkgs; [
-      # NixOS related:
+      ### NIXOS RELATED
+
       home-manager
 
-      # Necessary for building:
+      ### BUILD TOOLS
+
       gcc
     ];
   };
