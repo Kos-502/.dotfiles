@@ -1,31 +1,27 @@
 { pkgs, ... }:
 
 {
-  # Expose home-manager to itself.
   programs.home-manager.enable = true;
 
   home = {
-    # Declare information about the configuration.
     username = "kos";
     homeDirectory = "/home/kos";
 
-    # Declare environment variables.
     sessionVariables = {
       EDITOR = "nvim";
     };
 
-    # Declare user-wide installed fonts.
     packages = with pkgs; [
-      # Hyprland related:
+      ### HYPRLAND RELATED
+
       waybar
       rofi-wayland
       swww
 
-      # Custom fonts:
+      ### CUSTOM FONTS
+
       nerd-fonts.jetbrains-mono
     ];
-
-
 
     # !!! ----------- CAUTION ----------- !!! #
 
