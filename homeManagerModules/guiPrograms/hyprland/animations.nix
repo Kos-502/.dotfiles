@@ -6,34 +6,32 @@
 { ... }:
 
 {
-  wayland.windowManager.hyprland.settings = {
-    animations = {
-      enabled = true;
+  wayland.windowManager.hyprland.settings.animations = {
+    enabled = true;
 
-      bezier = "easeOutQuart, 0.190, 0.91, 0.37, 1";
+    bezier = "easeOutQuart, 0.190, 0.91, 0.37, 1";
 
-      animation = [
-        "windowsIn, 1, 5, easeOutQuart, popin 0%"
-        "windowsOut, 1, 5, easeOutQuart, popin 60%"
-        "windowsMove, 1, 5, easeOutQuart, popin 60%"
-        "windows, 1, 5, easeOutQuart"
+    animation = [
+      "windowsIn, 1, 5, easeOutQuart, popin 0%"
+      "windowsOut, 1, 5, easeOutQuart, popin 60%"
+      "windowsMove, 1, 5, easeOutQuart, popin 60%"
+      "windows, 1, 5, easeOutQuart"
 
-        "layers, 1, 5, easeOutQuart, popin 70%"
+      "layers, 1, 5, easeOutQuart, popin 70%"
 
-        "fadeIn, 1, 5, easeOutQuart"
-        "fadeOut, 1, 5, easeOutQuart"
-        "fadeSwitch, 0, 5, easeOutQuart"
-        "fadeShadow, 0, 5, easeOutQuart"
-        "fadeDim, 1, 5, easeOutQuart"
-        "fadeLayers, 1, 5, easeOutQuart"
-        "fade, 1, 5, easeOutQuart"
+      "fadeIn, 1, 5, easeOutQuart"
+      "fadeOut, 1, 5, easeOutQuart"
+      "fadeSwitch, 0, 5, easeOutQuart"
+      "fadeShadow, 0, 5, easeOutQuart"
+      "fadeDim, 1, 5, easeOutQuart"
+      "fadeLayers, 1, 5, easeOutQuart"
+      "fade, 1, 5, easeOutQuart"
 
-        "border, 0, 5, easeOutQuart"
-        "borderangle, 0, 5, easeOutQuart"
+      "border, 0, 5, easeOutQuart"
+      "borderangle, 0, 5, easeOutQuart"
 
-        "specialWorkspace, 1, 5, easeOutQuart, slidevert"
-        "workspaces, 1, 5, easeOutQuart, slide"
-      ];
-    };
+      "specialWorkspace, 1, 5, easeOutQuart, slidevert"
+      "workspaces, 1, 5, easeOutQuart, slide"
+    ];
   };
 }
