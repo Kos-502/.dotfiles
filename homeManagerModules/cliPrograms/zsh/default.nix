@@ -17,13 +17,11 @@
   };
 
   config = lib.mkIf config.zsh.enable {
-    programs.zsh = {
-      enable = true;
-      enableCompletion = true;
-    };
+    programs.zsh.enable = true;
   };
 
   imports = [
+    ./prompt.nix
     ./aliases.nix
   ];
 }
