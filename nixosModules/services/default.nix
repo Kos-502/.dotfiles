@@ -9,7 +9,7 @@
 
 {
   imports = [
-    ./greetd.nix
+    ./greetd
     ./rtkit.nix
     ./pipewire.nix
   ];
