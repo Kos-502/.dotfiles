@@ -21,5 +21,6 @@
 
     # CLI tools
     figlet
+    bat
   ];
 }
