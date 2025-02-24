@@ -11,7 +11,7 @@
     input = {
       kb_layout = "us";
 
-      follow_mouse = 0;
+      follow_mouse = 2;
 
       touchpad.natural_scroll = true;
     };
