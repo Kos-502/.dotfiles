@@ -10,7 +10,7 @@
 #      ░░         ░░  ░░░░░░░   ░░░░░░░  ░░      ░░░       #
 #                                                          #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-#
+
 #      Deutsch --- Modulare Universelle Umfeld auf NixOS
 #      English --- Modular Universal Environment on NixOS
 
