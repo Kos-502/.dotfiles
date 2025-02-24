@@ -10,6 +10,7 @@
 {
   programs.zsh.shellAliases = let
     flakePath = "/home/kos/.dotfiles";
+    batTheme = "gruvbox-dark";
   in
   {
     nixos-rbs = ''
@@ -21,5 +22,7 @@
     ls = "ls --group-directories-first --color=auto";
     ll = "ls --group-directories-first --color=auto -l";
     la = "ls --group-directories-first --color=auto -lA";
+
+    cat = "bat --theme ${batTheme}";
   };
 }
