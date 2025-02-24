@@ -23,5 +23,6 @@
   imports = [
     ./prompt.nix
     ./aliases.nix
+    ./plugins.nix
   ];
 }
