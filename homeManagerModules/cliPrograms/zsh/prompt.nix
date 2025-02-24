@@ -12,9 +12,9 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-    # ohMyZsh = {
-    #   enable = true;
-    #   theme = "robbyrussell";
-    # };
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+    };
   };
 }
