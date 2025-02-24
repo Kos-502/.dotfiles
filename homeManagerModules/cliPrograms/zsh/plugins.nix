@@ -11,7 +11,7 @@
     {
       name = "zsh-powerlevel10k";
       src = "${zsh-powerlevel10k}/share/zsh-powerlevel10k";
-      file = "powerlevel10k.zsh-theme";
+      file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     }
   ];
 }
