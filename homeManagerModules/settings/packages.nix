@@ -20,6 +20,7 @@
     nerd-fonts.jetbrains-mono
 
     # CLI tools
+    oh-my-zsh
     figlet
     bat
   ];
