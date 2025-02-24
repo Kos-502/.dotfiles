@@ -9,7 +9,7 @@
 {
   programs.zsh = {
     enableCompletion = true;
-    autosuggestions.enable = true;
+    autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
     ohMyZsh = {
