@@ -18,6 +18,7 @@
 
     # Custom fonts
     nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
 
     # CLI tools
     oh-my-zsh
