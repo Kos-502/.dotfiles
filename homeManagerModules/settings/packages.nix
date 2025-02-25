@@ -12,7 +12,6 @@
 {
   home.packages = with pkgs; [
     # Hyprland related
-    waybar
     rofi-wayland
     swww
 
