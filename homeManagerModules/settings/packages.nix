@@ -24,6 +24,7 @@
     oh-my-zsh
     figlet
     bat
+    fastfetch
 
     # Fun CLI apps
     tt
