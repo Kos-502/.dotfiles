@@ -12,6 +12,7 @@
     ./alacritty
     ./firefox
     ./hyprland
+    ./waybar
   ];
 
   ### DEFAULT ENABLE STATE
@@ -22,4 +23,5 @@
   alacritty.enable = true;
   firefox.enable = true;
   hyprland.enable = true;
+  waybar.enable = true;
 }
