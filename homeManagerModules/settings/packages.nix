@@ -24,5 +24,8 @@
     oh-my-zsh
     figlet
     bat
+
+    # Fun CLI apps
+    tt
   ];
 }
