@@ -17,4 +17,9 @@
   config = lib.mkIf config.waybar.enable {
     programs.waybar.enable = true;
   };
+
+  imports = [
+    ./settings
+    ./style
+  ];
 }
