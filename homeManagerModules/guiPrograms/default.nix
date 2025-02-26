@@ -12,6 +12,7 @@
     ./alacritty
     ./firefox
     ./hyprland
+    ./waybar
     ./rofi
   ];
 
@@ -23,5 +24,6 @@
   alacritty.enable = true;
   firefox.enable = true;
   hyprland.enable = true;
+  waybar.enable = true;
   rofi.enable = true;
 }
