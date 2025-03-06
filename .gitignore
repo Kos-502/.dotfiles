@@ -4,4 +4,4 @@
 #   (_)__, |_|\__|_\__, |_||_\___/_| \___|
 #     |___/        |___/                  
 
-./nixosModules/settings/localization.nix
+nixosModules/settings/localization.nix
