@@ -13,7 +13,8 @@
       # NixOS related
       home-manager
 
-      # Build tools
+      # Development tools
+      python3
       gcc
     ];
   };
