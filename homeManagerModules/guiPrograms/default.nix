@@ -13,7 +13,6 @@
     ./firefox
     ./hyprland
     ./waybar
-    ./rofi
   ];
 
   ### DEFAULT ENABLE STATE
@@ -25,5 +24,4 @@
   firefox.enable = true;
   hyprland.enable = true;
   waybar.enable = true;
-  rofi.enable = true;
 }
