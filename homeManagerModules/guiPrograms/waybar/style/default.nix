@@ -10,7 +10,4 @@
     ./colors.nix
     ./elements.nix
   ];
-
-  programs.waybar.style = ''
-    '';
 }
