@@ -12,6 +12,7 @@
 {
   home.packages = with pkgs; [
     # Hyprland related
+    rofi-wayland
     swww
 
     # Custom fonts
@@ -22,6 +23,7 @@
     oh-my-zsh
     figlet
     bat
+    tree
 
     # Fun CLI apps
     tt
