@@ -13,6 +13,7 @@
     ./firefox
     ./hyprland
     ./waybar
+    ./spicetify
   ];
 
   ### DEFAULT ENABLE STATE
@@ -24,4 +25,5 @@
   firefox.enable = true;
   hyprland.enable = true;
   waybar.enable = true;
+  spicetify.enable = true;
 }
