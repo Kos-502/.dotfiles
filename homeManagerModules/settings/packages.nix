@@ -14,6 +14,7 @@
     # Hyprland related
     rofi-wayland
     swww
+    hyprshot
 
     # Custom fonts
     nerd-fonts.jetbrains-mono
@@ -27,5 +28,8 @@
 
     # Fun CLI apps
     tt
+
+    # Desktop apps
+    vesktop
   ];
 }
