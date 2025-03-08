@@ -19,7 +19,8 @@
     in
     {
       enable = true;
-      theme = spicePkgs.themes.gruvbox;
+      theme = spicePkgs.themes.dribbblish;
+      colorScheme = "gruvbox-material-dark";
     };
   };
 
