@@ -37,5 +37,8 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users."kos" = import ../../homeManagerModules;
+
+    useGlobalPkgs = true;
+    useUserPackages = true;
   };
 }
