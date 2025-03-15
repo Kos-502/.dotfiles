@@ -12,5 +12,6 @@
     ./greetd
     ./rtkit.nix
     ./pipewire.nix
+    ./blueman.nix
   ];
 }
