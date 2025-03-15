@@ -16,5 +16,6 @@
     ./nix.nix
     ./environment.nix
     ./user.nix
+    ./bluetooth.nix
   ];
 }
