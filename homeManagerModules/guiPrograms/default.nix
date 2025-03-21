@@ -14,6 +14,7 @@
     ./hyprland
     ./waybar
     ./spicetify
+    ./steam
   ];
 
   ### DEFAULT ENABLE STATE
@@ -26,4 +27,5 @@
   hyprland.enable = true;
   waybar.enable = true;
   spicetify.enable = true;
+  steam.enable = true;
 }
