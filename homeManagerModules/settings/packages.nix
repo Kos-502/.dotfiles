@@ -15,6 +15,7 @@
     rofi-wayland
     swww
     hyprshot
+    dunst
 
     # Custom fonts
     nerd-fonts.jetbrains-mono
@@ -25,9 +26,11 @@
     figlet
     bat
     tree
+    epy
 
     # Fun CLI apps
     tt
+    tomato-c
 
     # Desktop apps
     vesktop
