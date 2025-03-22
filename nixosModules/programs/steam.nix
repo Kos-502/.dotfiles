@@ -1,0 +1,1 @@
+{ ... }: { programs.stea.enable = true; }
