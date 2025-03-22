@@ -14,5 +14,6 @@
   imports = [
     ./hyprland.nix
     ./zsh.nix
+    ./steam.nix
   ];
 }
