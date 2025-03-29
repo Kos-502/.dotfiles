@@ -12,7 +12,7 @@
 
     terminal = "alacritty";
     menu = "rofi -show drun -show-icons";
-    #screenshot = "grimshot copy area";
+    screenshot = "grimshot copy area";
   in
   {
     bind = [
@@ -40,7 +40,7 @@
 
       "${mod}, C, exec, ${terminal}"
       "${mod}, R, exec, ${menu}"
-#      "${mod}, S, exec, ${screenshot}"
+      "${mod}, S, exec, ${screenshot}"
 
       ### WORKSPACES
 
