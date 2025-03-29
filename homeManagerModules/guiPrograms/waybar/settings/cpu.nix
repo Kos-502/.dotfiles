@@ -16,7 +16,7 @@
     };
 
     format = " {usage}%";
-		format-alt = " {load}";
+    format-alt = " {load}";
 
     tooltip = false;
   };

@@ -8,6 +8,11 @@
 {
   imports = [
     ./battery.nix
+    ./clock.nix
+    ./cpu.nix
+    ./memory.nix
+    ./network.nix
+    ./hypr.nix
   ];
 
   programs.waybar.settings.miniBar = {
@@ -18,8 +23,9 @@
       "hyprland/mode"
       "hyprland/workspaces"
       "custom/arrow10"
-      "hyprland/window"
     ];
+
+    modules-center = [ "hyprland/window" ];
 
     modules-right = [
       "custom/arrow9"

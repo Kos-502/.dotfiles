@@ -12,6 +12,7 @@
 
     terminal = "alacritty";
     menu = "rofi -show drun -show-icons";
+    screenshot = "grimshot copy area";
   in
   {
     bind = [
@@ -27,7 +28,6 @@
       "${mod}, F, togglefloating"
 
       # Dwindle-specific actions:
-      "${mod}, S, togglesplit"
       "${mod}, P, pseudo"
 
       # Move to another window.
@@ -40,6 +40,7 @@
 
       "${mod}, C, exec, ${terminal}"
       "${mod}, R, exec, ${menu}"
+      "${mod}, S, exec, ${screenshot}"
 
       ### WORKSPACES
 

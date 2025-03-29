@@ -11,28 +11,30 @@
 
 {
   home.packages = with pkgs; [
-    # Hyprland related
-    rofi-wayland
-    swww
-    hyprshot
-    dunst
+    ### DAEMONS
 
-    # Custom fonts
-    nerd-fonts.jetbrains-mono
+    dunst # Notification daemon
+    swww  # Wallpaper daemon
+
+    ### FONTS
+
     nerd-fonts.fira-code
 
-    # CLI tools
-    oh-my-zsh
-    figlet
-    bat
-    tree
-    epy
+    ### CLI
 
-    # Fun CLI apps
-    tt
-    tomato-c
+    oh-my-zsh # ZSH prompt
+    figlet    # ASCII font art
+    bat       # Better cat
+    tree      # File tree displayer
+    epy       # Ebook reader
+    eza       # Better ls
+    tt        # Touch typing practice
+    tomato-c  # Pomodoro timer
 
-    # Desktop apps
-    vesktop
+    ### GUI
+
+    rofi-wayland  # Applications menu
+    vesktop       # Better discord
+    grimshot      # Screenshot tool
   ];
 }

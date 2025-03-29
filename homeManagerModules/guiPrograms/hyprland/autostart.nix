@@ -8,6 +8,7 @@
 {
   wayland.windowManager.hyprland.settings = let
     startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
+      dunst &
       waybar &
       swww-daemon &
       swww restore

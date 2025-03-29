@@ -8,6 +8,10 @@
 { config, lib, pkgs, inputs, ... }:
 
 {
+  imports = [
+    inputs.spicetify-nix.homeManagerModules.default
+  ];
+
   options = {
     spicetify.enable =
       lib.mkEnableOption "enables spicetify";
@@ -19,12 +23,12 @@
     in
     {
       enable = true;
+      enabledExtensions = with spicePkgs.extensions; [
+        adblock
+      ];
+      
       theme = spicePkgs.themes.dribbblish;
       colorScheme = "gruvbox-material-dark";
     };
   };
-
-  imports = [
-    inputs.spicetify-nix.homeManagerModules.default
-  ];
 }

@@ -19,10 +19,7 @@
       --use-remote-sudo
     '';
 
-    ls = "ls --group-directories-first --color=auto";
-    ll = "ls --group-directories-first --color=auto -l";
-    la = "ls --group-directories-first --color=auto -lA";
-
+    ls = "eza -lah --group-directories-first --icons=always";
     cat = "bat --theme ${batTheme}";
   };
 }
