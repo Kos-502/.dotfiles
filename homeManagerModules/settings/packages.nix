@@ -33,8 +33,8 @@
 
     ### GUI
 
-    rofi-wayland  # Applications menu
-    vesktop       # Better discord
-    grimshot      # Screenshot tool
+    sway-contrib.grimshot # Screenshot tool
+    rofi-wayland          # Applications menu
+    vesktop               # Better discord
   ];
 }
