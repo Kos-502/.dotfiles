@@ -4,7 +4,7 @@
 #   |_| |_\__,_|_\_\___(_)_||_|_/_\_\
 
 {
-  description = "This is Kos-502's NixOS configuration flake.";
+  description = "This is my NixOS configuration flake.";
 
   outputs = { nixpkgs, ... } @ inputs:
   let
